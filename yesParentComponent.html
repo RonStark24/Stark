@@ -1,0 +1,10 @@
+<template>
+  <lightning-button label="Open Modal" onclick={openModal}></lightning-button>
+  
+  <!-- Use child modal component -->
+  <c-modal-popup is-modal-open={isModalOpen} 
+                 onyes={handleYes} 
+                 onno={handleNo} 
+                 onclose={closeModal}>
+  </c-modal-popup>
+</template>
